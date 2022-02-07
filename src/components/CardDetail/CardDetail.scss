@@ -1,0 +1,146 @@
+@import '../../index.scss';
+
+.Main-Container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    button{
+        margin: 10px auto !important;
+    }
+    .ing-container{
+        width: 100%;
+        display: grid;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+        .ing{
+            margin: 0 5px;
+            padding: 12px;
+            border-radius: 12px;
+            background-color:#e9f3fb48;
+            color: $primary;
+            transition: .2s ease;
+            &:hover{
+                background-color: $primary;
+                color: white;
+                cursor: pointer;
+                p span{
+                    color: whitesmoke;
+                }
+            }
+            p{
+                min-height: 40px;
+                margin-top: 10px;
+                text-transform: capitalize;
+                text-align: center;
+                font-weight: 400;
+                font-size: .8rem;
+                font-family: 'Poppins', sans-serif;
+
+                span{
+                    font-weight: 600;
+                    font-size: .8rem;
+                    color: #1b1b1b;
+
+
+                }
+            }
+
+
+            img{
+                width: 100%;
+                height: 75px;
+                object-fit: contain;
+            }
+            width: 100%;
+        }
+    }
+    
+    .hide{
+        display: none;
+    }
+    .main-card{
+        box-shadow:
+        100px 100px 80px rgba(0, 0, 0, 0.03)
+      ;    
+        padding: 20px;
+        margin: 20px auto;
+        background-color: #fff;
+    
+    border-radius: 12px !important;
+    overflow: hidden !important;
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-auto-rows: auto;
+        width: 70%;
+        min-height: 80vh;
+        @media screen and (max-width:800px) {
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: 25px;
+            padding: 20px;
+            width: 90%;
+        }
+
+        @media screen and (max-width:600px) {
+            
+            .ing-container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-gap: 20px;
+               p{
+                   font-size: 1rem;
+
+               }
+            }
+            
+        }
+    }
+    .image{
+        width: 100%;
+        min-height: 50vh;
+        .food{
+            border-radius: 12px;
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .col-2{
+        width: 100%;
+        min-height: 80vh;
+        h2{
+            font-size: 2rem !important;
+        }
+        h3{
+            font-style: $body;
+            font-weight: 600;
+            margin: 20px auto;
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 1rem;
+            margin: 10px auto;
+        }
+
+        h5{
+            font-size: 1rem;
+            margin: 25px auto;
+            font-style: $body;
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+
+
+
+}
