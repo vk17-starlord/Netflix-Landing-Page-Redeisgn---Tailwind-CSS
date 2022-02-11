@@ -67,7 +67,7 @@ function CardDetail() {
         setSteps(array)
     }
     )
-}, []);
+}, [id]);
 
   const [isOpen, setisOpen] = useState(false);
   const ToggleOpen= ()=>{
