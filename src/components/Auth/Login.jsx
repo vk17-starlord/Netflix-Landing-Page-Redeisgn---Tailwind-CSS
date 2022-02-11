@@ -16,8 +16,8 @@ function Login() {
   const SubmitForm = ()=>{
 
     if(user.username!=='' ||  user.password!==''){
-      let  username =sessionStorage.getItem("username");
-      let password =  sessionStorage.getItem("password");
+      let  username =localStorage.getItem("username");
+      let password =  localStorage.getItem("password");
       if(username===user.username && password===user.password){
         console.log('success',user)
         Navigate('/home')
