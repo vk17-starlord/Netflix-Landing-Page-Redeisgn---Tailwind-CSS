@@ -1,13 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-function Card(props) {
-  const Navigate = useNavigate();
 
-  const FindMealById=(id)=>{
+function Card(props) {
+  
+  const Navigate = useNavigate();
+   const FindMealById=(id)=>{
     Navigate(`/${id}`)
   }
-    console.log('card-data',props.Meals)
-    const {Meals} = props 
+  
+  const {IsFavourite,AddFavourite,Meals}=props;
+
+ 
   return (
   <div className='card-grid'>
       {
@@ -16,7 +19,18 @@ function Card(props) {
                <img src={ele.strMealThumb} alt="" />
                <div className="text">
                  <h2>{ele.strMeal}</h2>
-                 <button className='view' onClick={()=>FindMealById(ele.idMeal)}>View Recipie</button>
+             <div className="btn-container">
+             <button className='view' onClick={()=>FindMealById(ele.idMeal)}>View Recipie</button>
+                 <button className='saved-btn' onClick={()=>{
+                   AddFavourite(ele.idMeal,ele.strMeal,ele.strMealThumb)
+                 }}>
+
+                   {
+                     !IsFavourite(ele.idMeal)?<i class='bx bx-heart' ></i>:<i class='bx bxs-heart'></i>
+                   }
+
+                 </button>
+             </div>
                </div>
                </div>)
       }

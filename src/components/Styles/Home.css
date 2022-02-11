@@ -27,7 +27,7 @@ h1, h2 {
 }
 
 .view {
-  margin: 10px auto;
+  margin: 10px 0;
   font-family: 'Poppins', sans-serif;
   background-color: #e9f3fb;
   color: #5627ff;
@@ -229,6 +229,10 @@ h1, h2 {
   }
 }
 
+.col-dark {
+  background-color: #05060f;
+}
+
 .home {
   overflow-x: hidden;
   width: 100%;
@@ -239,6 +243,14 @@ h1, h2 {
   display: grid;
   -ms-grid-columns: minmax(8.5vw, 1fr) 11fr;
       grid-template-columns: minmax(8.5vw, 1fr) 11fr;
+}
+
+.link {
+  background-color: #272a30;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
 }
 
 .sidenav {
@@ -660,5 +672,14 @@ h1, h2 {
   .MainBoard .col {
     padding: 0;
   }
+}
+
+.categories .box {
+  margin: 2.5px !important;
+}
+
+.not-found {
+  margin: 20px auto;
+  width: 100%;
 }
 /*# sourceMappingURL=Home.css.map */

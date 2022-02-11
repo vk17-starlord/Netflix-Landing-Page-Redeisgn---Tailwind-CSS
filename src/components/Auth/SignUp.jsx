@@ -21,10 +21,10 @@ function SignUp() {
   const SubmitForm = ()=>{
 
     if(user.username!=='' ||  user.password!==''){
-        sessionStorage.setItem("username", user.username);
-        sessionStorage.setItem("password", user.password);
-        sessionStorage.setItem("isMale", user.isMale);
-        sessionStorage.setItem("isFemale", user.isFemale);
+        localStorage.setItem("username", user.username);
+        localStorage.setItem("password", user.password);
+        localStorage.setItem("isMale", user.isMale);
+        localStorage.setItem("isFemale", user.isFemale);
         Navigate('/home')
       }else{
         alert('Please Enter Username Or Password')

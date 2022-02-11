@@ -3,8 +3,58 @@ import React, { useEffect,useState } from 'react';
 import {useParams} from 'react-router-dom';
 import Loader from '../Home/Loader';
 import './CardDetail.css'
+import Ingredient from './Ingredient';
 function CardDetail() {
-    let { id } = useParams();
+    
+        let Areas= [
+          {
+            flag:'us',
+            strArea: "American",
+            
+          },
+          {
+            flag:'gb',
+            strArea: "British"
+          },
+          {
+            flag:'ca',
+            strArea: "Canadian"
+          },
+          {
+            flag:'cn',
+            strArea: "Chinese"
+          },
+          {
+            flag:'hr',
+            strArea: "Croatian"
+          },
+          {
+            flag:'eg',
+            strArea: "Egyptian"
+          },
+          {
+            flag:'fr',
+            strArea: "French"
+          },
+          {
+            flag:'gr',
+            strArea: "Greek"
+          },
+          {
+            flag:'in',
+            strArea: "Indian"
+          },
+          {
+            flag:'gb-nir',
+            strArea: "Irish"
+          },
+          {
+            flag:'it',
+            strArea: "Italian"
+          }
+        ]
+    
+        let { id } = useParams();
     const [Meal, setMeal] = useState(null);
     const [Steps , setSteps] = useState(null);
     useEffect(() => {
@@ -18,10 +68,18 @@ function CardDetail() {
     }
     )
 }, []);
+
+  const [isOpen, setisOpen] = useState(false);
+  const ToggleOpen= ()=>{
+      setisOpen(!isOpen)
+  }
   return (
-    <div className='Main-Container'>
+<div className='Main-Container'>
+
         {Meal!==null && Steps!==null ?
          <div className="main-card">
+<Ingredient  Meal={Meal}  open={isOpen} setOpen={ToggleOpen} />
+
         <div className="col-1">
             <div className="image">
                 <img className='food' src={Meal.strMealThumb} alt="" />
@@ -51,24 +109,24 @@ function CardDetail() {
                 </div>
             </div>
             <div className="center">
-                
-            <button className="view">View More</button>
-        
+
+            <button className="view" onClick={  ToggleOpen }>View More</button>
+
             </div>
 
-            
+
         </div>
         <div className="col-2">
             <h2>{Meal.strMeal}</h2>
-            <h5> Origin - <span>{Meal.strArea}</span> </h5>
+            <h5> Origin - <span>{Meal.
+            strArea}</span> </h5>
             <h5> Category - <span>{Meal.strCategory}</span> </h5>
-
             <h3>How To Cook ?</h3>
             {
                 Steps.map(ele=><p>{ele}</p>)
             }
         </div>
-         
+
         </div>:<Loader></Loader>}
     </div>
   );

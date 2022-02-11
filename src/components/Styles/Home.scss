@@ -1,5 +1,7 @@
 @import '../../index.scss';
-
+.col-dark{
+    background-color: $dark;
+}
 
 .home{
     overflow-x: hidden;
@@ -11,6 +13,13 @@
     grid-template-columns: minmax(8.5vw,1fr) 11fr;
 }
 
+.link{
+    background-color: #272a30;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+}
 .sidenav{
 
     padding: 20px;
@@ -329,4 +338,15 @@ background-image: linear-gradient(315deg, $primary 0%, #3b5ffc 74%);
         padding: 0;
     }
     }
+}
+
+
+.categories .box{
+    margin: 2.5px !important;
+}
+
+.not-found{
+    margin: 20px auto;
+    width:100%;
+
 }

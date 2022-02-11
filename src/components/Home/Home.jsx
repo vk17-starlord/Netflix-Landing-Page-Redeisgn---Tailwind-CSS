@@ -4,7 +4,6 @@ import { Link , useNavigate} from 'react-router-dom';
 import '../Styles/Home.css'
 import SideNav from './SideNav';
 import MainBoard from './MainBoard';
-import { MealProvider } from '../Context/MealContext';
 function Home() {
 
   const user = useContext(UserContext);
