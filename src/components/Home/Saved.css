@@ -229,6 +229,12 @@ h1, h2 {
   }
 }
 
+@media screen and (max-width: 1020px) {
+  .saved {
+    display: none;
+  }
+}
+
 .saved {
   top: 0;
   padding: 20px;
@@ -251,12 +257,6 @@ h1, h2 {
   border-left: 1px solid #ccc;
   color: white;
   background-color: #05060f;
-}
-
-@media screen and (max-width: 1020px) {
-  .saved {
-    display: none;
-  }
 }
 
 .saved .box {

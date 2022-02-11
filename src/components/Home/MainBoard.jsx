@@ -106,7 +106,8 @@ function MainBoard() {
 
 
     </div>
-    <div className="col-dark">
+    
+    <div className="col-dark hide-on-small">
     <div className='saved'>
     <div className="profile">
     <div className={User.isMale?'box male-profile':'box female-profile'}>

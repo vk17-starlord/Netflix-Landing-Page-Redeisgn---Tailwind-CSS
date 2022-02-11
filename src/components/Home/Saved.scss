@@ -1,12 +1,13 @@
 @import '../../index.scss';
 
-
+@media screen and (max-width:1020px) {
+ .saved{
+    display: none;
+ }   
+}
 .saved{
 
-    @media screen and (max-width:1020px) {
-        display: none;
-        
-    }
+    
     top: 0;
 padding: 20px;
 width: 23vw;
