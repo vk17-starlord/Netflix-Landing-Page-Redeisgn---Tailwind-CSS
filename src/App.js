@@ -1,6 +1,5 @@
-import React, { useContext } from 'react';
-import {Routes,Route,Switch} from 'react-router-dom';
-import LandingPage from './components/LandingPage';
+import React  from 'react';
+import {Routes,Route} from 'react-router-dom';
 import Login from './components/Auth/Login';
 import SignUp from './components/Auth/SignUp';
 import Home from './components/Home/Home';

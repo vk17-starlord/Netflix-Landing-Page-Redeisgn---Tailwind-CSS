@@ -1,4 +1,4 @@
-import React ,{useState }from 'react';
+import React from 'react';
 
 export const UserContext =React.createContext();
 
@@ -6,11 +6,13 @@ export const UserContext =React.createContext();
  
 export function UserProvider({children}){
 
-    const [User, setUser] = useState({
+    const User= {
         username:localStorage.getItem('username')??'',
         isMale:localStorage.getItem('isMale')??false,
         isFemale:localStorage.getItem('isFemale')??false,
-    });
+    }
+
+  
 
      
 return(

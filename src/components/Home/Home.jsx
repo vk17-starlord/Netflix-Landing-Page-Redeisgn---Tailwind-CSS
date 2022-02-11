@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { UserContext } from '../Context/UserContext';
-import { Link , useNavigate} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import '../Styles/Home.css'
 import SideNav from './SideNav';
 import MainBoard from './MainBoard';
@@ -13,7 +13,7 @@ function Home() {
     if(user.username===''){
     Navigate('/');
     }
-  },[])
+  },[user,Navigate])
 
   return ( 
      <div className='home'>
