@@ -6,53 +6,53 @@ import './CardDetail.css'
 import Ingredient from './Ingredient';
 function CardDetail() {
     
-        let Areas= [
-          {
-            flag:'us',
-            strArea: "American",
+        // let Areas= [
+        //   {
+        //     flag:'us',
+        //     strArea: "American",
             
-          },
-          {
-            flag:'gb',
-            strArea: "British"
-          },
-          {
-            flag:'ca',
-            strArea: "Canadian"
-          },
-          {
-            flag:'cn',
-            strArea: "Chinese"
-          },
-          {
-            flag:'hr',
-            strArea: "Croatian"
-          },
-          {
-            flag:'eg',
-            strArea: "Egyptian"
-          },
-          {
-            flag:'fr',
-            strArea: "French"
-          },
-          {
-            flag:'gr',
-            strArea: "Greek"
-          },
-          {
-            flag:'in',
-            strArea: "Indian"
-          },
-          {
-            flag:'gb-nir',
-            strArea: "Irish"
-          },
-          {
-            flag:'it',
-            strArea: "Italian"
-          }
-        ]
+        //   },
+        //   {
+        //     flag:'gb',
+        //     strArea: "British"
+        //   },
+        //   {
+        //     flag:'ca',
+        //     strArea: "Canadian"
+        //   },
+        //   {
+        //     flag:'cn',
+        //     strArea: "Chinese"
+        //   },
+        //   {
+        //     flag:'hr',
+        //     strArea: "Croatian"
+        //   },
+        //   {
+        //     flag:'eg',
+        //     strArea: "Egyptian"
+        //   },
+        //   {
+        //     flag:'fr',
+        //     strArea: "French"
+        //   },
+        //   {
+        //     flag:'gr',
+        //     strArea: "Greek"
+        //   },
+        //   {
+        //     flag:'in',
+        //     strArea: "Indian"
+        //   },
+        //   {
+        //     flag:'gb-nir',
+        //     strArea: "Irish"
+        //   },
+        //   {
+        //     flag:'it',
+        //     strArea: "Italian"
+        //   }
+        // ]
     
         let { id } = useParams();
     const [Meal, setMeal] = useState(null);
@@ -118,8 +118,7 @@ function CardDetail() {
         </div>
         <div className="col-2">
             <h2>{Meal.strMeal}</h2>
-            <h5> Origin - <span>{Meal.
-            strArea}</span> </h5>
+            <h5> Origin - <span>{Meal.strArea}</span> </h5>
             <h5> Category - <span>{Meal.strCategory}</span> </h5>
             <h3>How To Cook ?</h3>
             {
