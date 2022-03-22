@@ -1,44 +1,32 @@
-import React  from 'react';
-import {Routes,Route} from 'react-router-dom';
-import Login from './components/Auth/Login';
-import SignUp from './components/Auth/SignUp';
-import Home from './components/Home/Home';
-import { UserProvider } from './components/Context/UserContext';
-import { MealProvider } from './components/Context/MealContext';
-import CardDetail from './components/CardDetail/CardDetail';
-import { FavouriteProvider } from './components/Context/FavouriteContext';
+import React ,{useState} from 'react'
+import Features from './components/Features'
+import GetStarted from './components/GetStarted'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Pricing from './components/Pricing'
+import Sidenav from './components/Sidenav'
+import Trend from './components/Trend'
+
 function App() {
+ const [isOpen, setisOpen] = useState(false); 
 
+ const Toggle = ()=>{
+   setisOpen(!isOpen);
+ }
+  return (
+    <div className='App h-auto min-h-screen bg-black text-white'>
+{isOpen ? <Sidenav Toggle = {Toggle} /> : null}
+<div className="container  w-10/12 mx-auto">
+  <Header Toggle = {Toggle}/>
+<Hero/>
+</div>
+<Trend/>
+<Features/>
+<Pricing/>
+<GetStarted />
 
-
-return( 
-  <>
-  <UserProvider>
-      
-   <MealProvider>
-    
-     <FavouriteProvider>
-
-    <Routes>
-      <Route path='/' element={<Login/>}></Route>
-      <Route path='SignUp' element={<SignUp/>}></Route>
-      <Route path='Home' element={<Home/>}></Route>
-      <Route path="/:id" element={<CardDetail />} />
-      
-    </Routes>
-   
-
-     </FavouriteProvider>
-    
-   </MealProvider>
-  
-    
-
-
-  </UserProvider>
-  
-  </>
-  );
+  </div>
+  )
 }
 
-export default App;
+export default App
