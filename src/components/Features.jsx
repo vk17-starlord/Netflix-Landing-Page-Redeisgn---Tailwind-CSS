@@ -1,6 +1,5 @@
 import React from 'react'
-import child from './assets/child.svg' 
-
+import child from './assets/child.svg'; 
 import download from './assets/download.svg' 
 import device from './assets/device.svg' 
 
