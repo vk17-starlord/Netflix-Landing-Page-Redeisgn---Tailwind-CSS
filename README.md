@@ -1,0 +1,1 @@
+A simple Netflix Landing page designed by me on figma and coded with React JS and Tailwind CSS

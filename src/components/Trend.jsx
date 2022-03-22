@@ -14,9 +14,9 @@ function Trend() {
 
                    <p className='text-base font-sans font-light text-slate-100 w-9/12 my-4'>In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.</p>
                    </h3>
-                   <div className="b-container flex w-9/12 ">
-                   <button className='bg-[#E50914] px-5 w-6/12 mr-5 py-3 flex justify-center my-5 middle'> Watch Episode</button>
-                   <button className='border-2 border-white px-5 w-6/12  py-3 flex justify-center my-5 middle'> Season 1</button>
+                   <div className="b-container flex w-9/12 md:w-full md:flex-col ">
+                   <button className='bg-[#E50914] px-5 md:w-8/12 w-6/12 mr-5 py-3 flex justify-center my-5 middle'> Watch Episode</button>
+                   <button className='border-2 border-white md:w-8/12 px-5 w-6/12  py-3 flex justify-center my-5 middle'> Season 1</button>
                   </div> 
                   <h2 className='text-2xl font-sans font-bold my-5 '>Popular This Week</h2>
                   <img src={series} className='mt-10 w-8/12' alt="txt" />
