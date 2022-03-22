@@ -7,10 +7,10 @@
 
 .trend{
     background-size: cover;
-    background-image: url('./components/assets/trendbg.png');
+    background-image: url('./trendbg.png');
 }
 .start{
     background-size: cover;
-    background-image: url('./components/assets/startbg.svg');
+    background-image: url('./startbg.svg');
 
 }
