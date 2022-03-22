@@ -1,8 +1,8 @@
 import React from 'react'
-import phone from './assets/phone.svg';
-import tablet from './assets/tablet.svg';
-import laptop from './assets/laptop.svg';
-import Tv from './assets/phone.svg';
+import phone from '../phone.svg';
+import tablet from '../tablet.svg';
+import laptop from '../laptop.svg';
+import Tv from '../phone.svg';
 
 function Pricing() {
   return (

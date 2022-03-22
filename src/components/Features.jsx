@@ -1,6 +1,6 @@
 import React from 'react'
-import download from './assets/download.svg' 
-import device from './assets/device.svg' 
+import download from '../download.svg' 
+import device from '../device.svg' 
 
 function Features() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from './assets/Hero.png'
+import hero from '../Hero.png'
 function Hero() {
   return (
     <div className=' min-h-[100vh]    grid grid-cols-2 md:grid-cols-1 md:py-10'>

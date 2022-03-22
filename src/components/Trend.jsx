@@ -1,6 +1,6 @@
 import React from 'react';
-import Banner from './assets/banner.png';
-import series from './assets/series.png';
+import Banner from '../banner.png';
+import series from '../series.png';
 function Trend() {
   return (
     <div className='trend  w-full min-h-screen md:min-h-auto'>
