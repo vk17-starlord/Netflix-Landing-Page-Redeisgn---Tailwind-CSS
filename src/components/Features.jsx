@@ -1,5 +1,5 @@
 import React from 'react'
-import child from './assets/child.svg'; 
+import canvas from './assets/canvas.png'; 
 import download from './assets/download.svg' 
 import device from './assets/device.svg' 
 
@@ -23,10 +23,10 @@ Anytime</h1>
        </div>
        <div className="col  my-20 md:my-2 p-3">
            <div className="icon px-4 w-max py-5 rounded-full bg-[#E50914]">
-                      <img src={child} alt="" className='w-10/12 mx-auto' />
+                      <img src={canvas} alt="" className='w-10/12 max-w-[40px] mx-auto' />
            </div>
-           <h1 className='text-2xl my-2 font-bold'>Create profiles for  your children.</h1>
-           <p className='text-slate-300 font-light text-lg'>Send children on adventures with their favourite just for them</p>
+           <h1 className='text-2xl my-2 font-bold'>Create profiles for  your canvasren.</h1>
+           <p className='text-slate-300 font-light text-lg'>Send canvasren on adventures with their favourite just for them</p>
        </div>
 
     </div>
